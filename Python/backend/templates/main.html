@@ -1,0 +1,25 @@
+<h1 style="font-family:Georgia, 'Times New Roman', Times, serif">Triton Food Pantry</h1>
+<h3 style="font-family:Georgia, 'Times New Roman', Times, serif; text-align: center">You have 10 points left.</h1>
+
+<!--<ul>
+    <li>Broccoli</li>
+    <li>Brownies</li>
+    <li>eggs</li>
+</ul> -->
+
+<ul>
+    {% for item in items %}
+        <li>{{ item.content }}
+            <form action="/deleteItem/{{item.id}}/" 
+                style="display: inline"
+                method="post">{% csrf_token %}
+                <input type="submit" value="Delete"/>
+            </form>
+        </li>
+    {% endfor %}
+</ul>
+
+<form action="/addItem/" method="post">{% csrf_token %}
+    <input type="text" name="content"/>
+    <input type="submit" value="Add"/>
+</form>
