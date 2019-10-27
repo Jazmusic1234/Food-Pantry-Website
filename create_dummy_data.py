@@ -22,5 +22,5 @@ data['item'].append({
     'credit': 3
 })
 
-with open('data.txt', 'w') as outfile:
+with open('data.json', 'w') as outfile:
     json.dump(data, outfile)
