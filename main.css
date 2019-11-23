@@ -12,7 +12,7 @@ h1{
     padding: 14px 16px;
     text-decoration: none;
     float: left;
-    border-right: 1px solid rgb(68, 68, 68)
+    border-right: 1px solid rgb(68, 68, 68);
     font-size: 17px;
 }
 .topnav input[type=text] {
@@ -43,4 +43,14 @@ h1{
 
 .topnav a.active {
     background-color: rgb(39, 124, 202);
+}
+
+.pic {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-style: dotted;
+    border-width: 3px;
+    width: 168x;
+    display: inline-block;
 }
