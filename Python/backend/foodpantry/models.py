@@ -2,17 +2,10 @@ from django.db import models
 
 # Create your models here.
 class PantryItem(models.Model):
-    content = models.TextField()
-    image = models
-
-class Snippet(models.Model):
-    title = models.CharField(max_length=100)
-    body = models.TextField()
-    create = models.DateTimeField(auto_now_add=True)
-    font_size = models.IntegerField()
+    image = models.ImageField(upload_to='foodpantry/images/', default='images/noimage.png')
+    name = models.CharField(max_length=64)
+    points = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.title
+        return f"{self.name} ({self.points} points)"
 
-    def body_preview(self):
-        return self.body[:50]

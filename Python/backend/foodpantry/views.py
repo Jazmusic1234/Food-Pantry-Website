@@ -4,18 +4,12 @@ from .models import PantryItem
 
 # Create your views here.
 
-def pantryView(request):
-    all_items = PantryItem.objects.all()
-    return render(request, 'main.html',
-        {'items': all_items})
+def mainpage(request):
+    context = {
+        "items": PantryItem.objects.all()
+    }
+    return render(request, 'foodpantry/mainpage.html', context)
 
-def addItem(request):
-    new_item = PantryItem(content = request.POST['content'])
-    new_item.save()
-    return HttpResponseRedirect('/foodpantry/') 
-
-def deleteItem(request, item_id):
-    item_to_delete = PantryItem.objects.get(id=item_id)
-    item_to_delete.delete()
-    return HttpResponseRedirect('/foodpantry/')
+def aboutpage(request):
+    return render(request, 'foodpantry/about.html')
 
