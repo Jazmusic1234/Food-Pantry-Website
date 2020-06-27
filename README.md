@@ -5,6 +5,7 @@ Background:
 The Triton Food Pantry at UCSD allows each student to take 10 points worth of food. They often have a long line because they don't have a catalog of the items they have and their point value that students can refer to beforehand.
 
 Technologies used: Django, HTML, CSS
+Resources: Harvard's CS50 Youtube course
 
 https://healthy-storm-reason.glitch.me
 
