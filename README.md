@@ -6,28 +6,33 @@ The Triton Food Pantry at UCSD allows each student to take 10 points worth of fo
 
 Technologies used: Django, HTML, CSS
 
+https://healthy-storm-reason.glitch.me
+
+
+ACCESSING WEBSITE LOCALLY
 How to access the website:
-1. Open up terminal and go into the folder Python/backend, then type these commands
 
-$ pipenv shell
+  1. Open up terminal and go into the folder Python/backend, then type these commands
 
-$ python manage.py runserver
+    $ pipenv shell
 
-2. Go to the website that they give you (http://127.0.0.1:8000/)
+    $ python manage.py runserver
+
+  2. Go to the website that they give you (http://127.0.0.1:8000/)
 
 How to access the admin page and edit the items on the website:
-1. Go to http://127.0.0.1:8000/admin
+  1. Go to http://127.0.0.1:8000/admin
 
-2. Log in
+  2. Log in
 
-Username = Guest
+    Username = Guest
 
-Password = FoodSecurity
+    Password = FoodSecurity
 
-3. Click the "Add" button next to Pantry Items
+  3. Click the "Add" button next to Pantry Items
 
-4. Add an image of the item, the name of the item, and how many points it is worth
+  4. Add an image of the item, the name of the item, and how many points it is worth
 
-5. Click "Save"
+  5. Click "Save"
 
-6. Click "View site" which located at the top of the page to see the changes made
+  6. Click "View site" which located at the top of the page to see the changes made
